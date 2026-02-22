@@ -1,0 +1,32 @@
+//
+//  battlecharacter+status.json
+//  weapon
+//
+//  Created by Dr. Nathaniel Fox on 2/19/26.
+//
+
+import Foundation
+extension BattleCharacter {
+    var isKnockedUp: Bool {
+        get { return statusEffects.contains(.knockup) }
+        set {
+            if newValue {
+                statusEffects.insert(.knockup)
+            } else {
+                statusEffects.remove(.knockup)
+            }
+        }
+    }
+    
+    var canActThisTurn: Bool {
+        return !isKnockedUp && !isStunned && !isAsleep
+    }
+    
+    func processStatusEffects() {
+        if isKnockedUp {
+            // End knockup after one turn
+            isKnockedUp = false
+            print("\(name) lands back on the ground!")
+        }
+    }
+}

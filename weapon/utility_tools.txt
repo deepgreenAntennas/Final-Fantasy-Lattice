@@ -1,0 +1,59 @@
+{
+  "utility_tools": [
+    {
+      "id": "glimmer_pouch",
+      "name": "Glimmer Pouch",
+      "type": "utility",
+      "slot": "satchel",
+      "description": "A small bag that occasionally generates sparkles of Gil.",
+      "effect": "Gain 5-15 Gil after each battle",
+      "appearance": "Simple leather pouch with a subtle glow",
+      "price": 150,
+      "sprite": "tool_glimmer_pouch"
+    },
+    {
+      "id": "healers_satchel",
+      "name": "Healer's Satchel", 
+      "type": "utility",
+      "slot": "satchel",
+      "description": "A well-organized bag with herbs and bandages always at hand.",
+      "effect": "15% increased healing from all sources",
+      "appearance": "White leather satchel with red cross symbol",
+      "price": 300,
+      "sprite": "tool_healers_satchel"
+    },
+    {
+      "id": "scholars_satchel",
+      "name": "Scholar's Satchel",
+      "type": "utility", 
+      "slot": "satchel",
+      "description": "Overflowing with scrolls and notes. Knowledge is weightless.",
+      "effect": "MP regenerates 25% faster out of combat",
+      "appearance": "Sturdy canvas bag bursting with parchment",
+      "price": 250,
+      "sprite": "tool_scholars_satchel"
+    },
+    {
+      "id": "thieves_pouch",
+      "name": "Thief's Pouch",
+      "type": "utility",
+      "slot": "satchel",
+      "description": "Slightly... acquired goods seem to find their way here.",
+      "effect": "10% chance to steal extra Gil from enemies",
+      "appearance": "Worn black leather with many hidden pockets",
+      "price": 400,
+      "sprite": "tool_thieves_pouch"
+    },
+    {
+      "id": "travelers_satchel",
+      "name": "Traveler's Satchel",
+      "type": "utility",
+      "slot": "satchel", 
+      "description": "A reliable pack that makes long journeys feel shorter.",
+      "effect": "Reduces world map encounter rate by 20%",
+      "appearance": "Weather-beaten leather with sturdy straps",
+      "price": 200,
+      "sprite": "tool_travelers_satchel"
+    }
+  ]
+}

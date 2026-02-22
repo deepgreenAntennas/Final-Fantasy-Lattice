@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "merchant": "Grok's Gridiron Goods",
+  "motto": "Fine steel for the Lattice-walkers!",
+  "weapons": [
+    {
+      "id": "iron_blade",
+      "name": "Iron Broadsword",
+      "type": "sword",
+      "rarity": "common",
+      "description": "A trusty steel blade. Dependable as the sunrise.",
+      "stats": {
+        "attack": 15,
+        "weight": 8,
+        "critical_chance": 0.05
+      },
+      "special_effect": "none",
+      "price": 200,
+      "sprite": "weapon_iron_sword"
+    },
+    {

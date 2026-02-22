@@ -1,0 +1,25 @@
+//
+//  cosmic_foundation.json
+//  Final Fantasy Lattice
+//
+//  Created by Dr. Nathaniel Fox on 2/20/26.
+//
+
+import Foundation
+{
+  "core_concept": {
+    "title": "The Synaptic Lattice",
+    "description": "A cosmic network woven from the primordial mathematics of existence. It is the 'Eden' — the perfect, ordered blueprint of reality. The 'Tales' are the infinite stories playing out within it.",
+    "domains": {
+      "mathematics_of_eden": {
+        "meaning": "The Divine Order",
+        "manifestations": ["Sacred Geometry", "Golden Ratios", "Fibonacci Spirals", "Prime Number Sequences", "Crystalline Algorithms"],
+        "allegiance": "Altima, Guardians of Order"
+      },
+      "tales_from_across_the_universe": {
+        "meaning": "The Chaos of Creation",
+        "manifestations": ["Alien Ecosystems", "Forgotten Civilizations", "Quantum Anomalies", "Living Stories", "Evolutionary Wilds"],
+        "allegiance": "New characters, Explorers of Chaos"
+    }
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "armour_set": {
+    "name": "Requiem Set",
+    "theme": "Elegant, ceremonial armour for those who command both life and death",
+    "set_bonus": "Equipping 3+ pieces grants 'Final Elegy' - Revive once per battle with 50% HP when KO'd",
+    "pieces": [
+      {
+        "id": "requiem_circlet",
+        "name": "Requiem Circlet",
+        "type": "head",
+        "slot": "head",
+        "description": "A silver crown adorned with obsidian gems. Whispers of forgotten hymns.",
+        "stats": {
+          "magic_defense": 15,
+          "magic": 8,
+          "mp_max": 20,
+          "spirit": 5
+        },
+        "special_effect": "Slight resistance to Silence and Confusion",
+        "appearance": "Elegant silver filigree with dark gem clusters",
+        "price": 1200,
+        "sprite": "armour_requiem_circlet"
+      },
+      {
+        "id": "requiem_robe",
+        "name": "Requiem Ceremonial Robe", 
+        "type": "body",
+        "slot": "body",
+        "description": "Black and silver robes that flow like ink and moonlight. Scented with myrrh.",
+        "stats": {
+          "defense": 18,
+          "magic_defense": 25,
+          "hp_max": 30,
+          "magic": 12
+        },
+        "special_effect": "25% chance to reflect black magic",
+        "appearance": "Flowing black robes with silver lunar patterns",
+        "price": 2500,
+        "sprite": "armour_requiem_robe"
+      },
+      {
+        "id": "requiem_gauntlets",
+        "name": "Requiem Gauntlets",
+        "type": "hands",
+        "slot": "hands",
+        "description": "Silvery gloves that allow precise gestures for both healing and harm.",
+        "stats": {
+          "defense": 10,
+          "dexterity": 8,
+          "accuracy": 15
+        },
+        "special_effect": "Spells cast 20% faster",
+        "appearance": "Form-fitting silver metal with articulated fingers",
+        "price": 900,
+        "sprite": "armour_requiem_gauntlets"
+      },
+      {
+        "id": "requiem_greaves",
+        "name": "Requiem Greaves",
+        "type": "feet", 
+        "slot": "feet",
+        "description": "Boots that move silently between realms. Leave no footprints.",
+        "stats": {
+          "defense": 12,
+          "speed": 5,
+          "evasion": 10
+        },
+        "special_effect": "Ignore movement penalties on special terrain",
+        "appearance": "Sleek silver greaves that seem to absorb light",
+        "price": 1100,
+        "sprite": "armour_requiem_greaves"
+      },
+      {
+        "id": "requiem_mantle",
+        "name": "Requiem Mantle",
+        "type": "accessory",
+        "slot": "accessory",
+        "description": "A cloak woven from twilight itself. Grants authority over final moments.",
+        "stats": {
+          "magic_defense": 20,
+          "spirit": 15,
+          "hp_regen": 5
+        },
+        "special_effect": "Auto-Life effect when HP falls below 10% (once per battle)",
+        "appearance": "A mantle that shifts between deep purple and starry black",
+        "price": 3000,
+        "sprite": "armour_requiem_mantle"
+      }
+    ]
+  },
+  "acquisition": {
+    "method": "Crafted from rare materials or found in the Necropolis of Spires",
+    "materials_required": [
+      "Lunar Pearl x3",
+      "Obsolete Codex x1", 
+      "Phantom Silk x5",
+      "Forgotten Hymn Score x1"
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NamePAHitRangeAcquisitionCostNotes/EffectsBattle Axe90%-Outfitters (Ch1), Poach Wisenkin1,500High varianceGiant's Axe120%-Outfitters (Ch2), Poach Wisenkin4,000High varianceSlasher160%-Outfitters (Ch3), Poach Minotaur12,000Inflicts SlowFrancisca240%-Melee Mode10-Golden Axe300%-Melee/Rendezvous10Gift from spirits
+Bags (WotL exclusive for females/Onion Knight/Dragonkin)
+Random damage like axes. Vertical range: 2 up/3 down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NamePAHitRangeAcquisitionCostNotes/EffectsCatskin Bag100%-Outfitters (Ch3), Poach Vampire53,000+Magick PowerProudhide Bag120%-Outfitters (Ch3), Poach Behemoth52,000RegenHardscale Bag140%-Outfitters (Ch4), Poach Dragon58,000+1 SpeedFallingstar Bag200%-Poach Wild Boar, Rendezvous60,000High variance
+Books
+Fixed range 3 (horizontal only). Damage: floor((PA + MA)/2 × WPN.ATK). Usable by Arithmetician/Mystic/Onion Knight.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NamePAHitRangeAcquisitionCostNotesBattle Folio715%3Outfitters (Ch2), Steal Mystic Lv13+3,000-Bestiary815%3Outfitters (Ch3), Steal Mystic Lv22+6,000-Papyrus Codex915%3Outfitters (Ch3), Steal Mystic Lv34+10,000-Omnilex1115%3Poach Greater Malboro, Rendezvous30,000-
+Bows
+Ranged (3–5 horizontal, height-adjusted vertical). Damage: floor((PA + Speed)/2 × WPN.ATK). Arc fire. Weather/night penalty.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NamePAHitRangeAcquisitionCostNotes/EffectsLongbow40%3-5Outfitters (Ch1)800-Silver Bow50%3-5Outfitters (Ch1)1,500-Ice Bow50%3-5Outfitters (Ch2)2,000Ice elementLightning Bow60%3-5Outfitters (Ch2)3,000Thundara effect, LightningMythril Bow70%3-5Outfitters (Ch3)5,000-Windslash Bow80%3-5Outfitters (Ch3)8,000Wind elementArtemis Bow100%3-5Poach Behemoth King, Rendezvous22,000-Yoichi Bow120%3-5Rare Treasure (Midlight's Deep)10-Perseus Bow160%3-5Rare Treasure (Midlight's Deep)10-Sagittarius240%3-5Rendezvous10Meteor arrows
+Cloths
+Range 2 horizontal/3 vertical. High parry (50%). Damage: floor((PA + MA)/2 × WPN.ATK). Dancer/Onion Knight.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NamePAHitRangeAcquisitionCostNotesDamask Cloth850%2h/3vOutfitters (Ch3)7,000-Cashmere1050%2h/3vOutfitters (Ch3), Poach Blue D.15,000-Wyrmweave Silk1550%2h/3vPoach Tiamat, Rendezvous40,000Special weave
+Crossbows
+Range 3–4 horizontal/infinite vertical. Straight shot. Weather/night penalty.
+(Truncated in source; continuing pattern from wiki: Bowgun PA3, Knightslayer PA3 Blind, Crossbow PA4, etc. up to Ultima Bow PA18.)
+(Note: Full catalogue spans 13+ categories including Swords [e.g., Iron Fan PA26], Knight Swords [Excalibur PA35 Holy], Katana [Masamune PA45], Spears [Gungnir PA32], Guns [Nycercam PA28], Flails [Morning Star PA28], Staves [Lunasus PA16 Faith+), Rods [Meteor Rod PA12 MP+), Harps [Chirijiraden PA22 MA+), Knives [Orichalcum PA25]. For complete mod-ready data, download from ffhacktics.com ASM patches or use Lion Editor.)

@@ -1,0 +1,49 @@
+SHIELD VISUAL DESIGN GUIDE:
+
+Aegis Buckler:
+- Shape: Circular, 24px diameter
+- Color: Bright silver (#C0C0C0) with gold trim (#FFD700)
+- Detail: Celestial constellations engraved around rim
+- Effect: Subtle sparkle animation
+
+Tower Shield of Valor:
+- Shape: Large rectangular, 32px wide x 40px tall  
+- Color: Burnished steel (#808080) with bronze lion emblem (#CD7F32)
+- Detail: Battle scars and weathering visible
+- Effect: Solid, imposing presence
+
+Lattice Barrier:
+- Shape: Hexagonal, 28px across
+- Color: Translucent blue (#4169E1) with glowing circuits (#00FFFF)
+- Detail: Visible data streams flowing across surface
+- Effect: Pulsing glow, circuit animations
+
+Dragonscale Guard:
+- Shape: Kite-shaped, 30px tall
+- Color: Scarlet red (#DC143C) with darker scale patterns (#8B0000)
+- Detail: Individual scales visible, dragon-scale texture
+- Effect: Gentle heat shimmer, occasional ember particles
+
+Mirror Shield of Truth:
+- Shape: Perfect circle, 26px diameter
+- Color: Highly reflective silver (#F0F0F0)
+- Detail: Shows distorted reflection of surroundings
+- Effect: Flash of light when reflecting attacks
+
+Ancestral Ward:
+- Shape: Oval, 28px wide x 32px tall
+- Color: Ancient bronze (#B08D57) with green patina (#6B8E23)
+- Detail: Faintly glowing runes around edge
+- Effect: Gentle protective aura
+
+Crystal Barrier:
+- Shape: Diamond-shaped, 30px across
+- Color: Prismatic crystal (rainbow effect)
+- Detail: Facets catch light differently
+- Effect: Rainbow sparkle, refraction effects
+
+GENERAL:
+- Size: 32x32 pixels standard
+- Style: Final Fantasy Tactics meets heraldic design
+- File Format: PNG with transparency
+- Animation: 2-3 frame idle animations for epic/legendary shields

@@ -1,0 +1,32 @@
+{
+  "abilities": [
+    {
+      "id": "way_upper_cut",
+      "name": "Way Upper Cut",
+      "type": "physical",
+      "element": "neutral",
+      "description": "A devastating upward strike that launches enemies skyward.",
+      "power": 120,
+      "cost": 15,
+      "target": "single",
+      "animation": "uppercut_anim",
+      "effects": [
+        {
+          "type": "damage",
+          "formula": "atk * 1.2 - def"
+        },
+        {
+          "type": "knockup", 
+          "chance": 0.8,
+          "duration": 1
+        },
+        {
+          "type": "critical_boost",
+          "multiplier": 1.5
+        }
+      ],
+      "unlock_level": 10,
+      "sprite": "ability_uppercut"
+    }
+  ]
+}

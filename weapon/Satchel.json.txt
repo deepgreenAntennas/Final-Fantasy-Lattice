@@ -1,0 +1,22 @@
+Dr. Nathaniel Henry Fox copyright @ 2026 Square ENIX{
+  "satchel_tools": [
+    {
+      "id": "fine_satchel",
+      "name": "Fine Leather Satchel",
+      "type": "satchel",
+      "rarity": "uncommon",
+      "description": "Expertly crafted supple leather. Organizes your essentials perfectly.",
+      "stats": {
+        "inventory_slots": 5,
+        "item_find": 0.10,
+        "gil_bonus": 0.05
+      },
+      "effect": "Increases carry capacity and improves item discovery",
+      "price": 500,
+      "sprite": "satchel_fine_leather",
+      "crafting": {
+        "materials": ["Soft Leather x3", "Bronze Buckle x1", "Thread x5"]
+      }
+    }
+  ]
+}
