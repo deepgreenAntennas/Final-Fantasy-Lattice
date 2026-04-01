@@ -1,0 +1,160 @@
+class JansBodysuit:
+    def __init__(self, upgrade_level=0):
+        self.name = "Jen's Bodysuit"
+        self.rarity = "Legendary"
+        self.description = "A sleek, technologically advanced combat suit of unknown origin. Pulses with latent energy."
+        self.upgrade_level = upgrade_level
+        
+        # Base stats that scale with upgrade level
+        self.stat_modifiers = {
+            'defense': 15 + (upgrade_level * 5),
+            'magic_defense': 20 + (upgrade_level * 6),
+            'agility': 10 + (upgrade_level * 3),
+            'evasion': 25 + (upgrade_level * 8)
+        }
+        
+        # Special abilities unlocked through upgrades
+        self.abilities = self._get_abilities()
+        
+        # Lore fragments collected throughout the game
+        self.lore_fragments = [
+            "Fragment #1: Scans indicate non-terrestrial alloys in the weave",
+            "Fragment #2: Energy signature matches pre-Collapse technology",
+            "Fragment #3: Inscriptions mention 'Project JENOVA'",
+            "Fragment #4: Bio-readings show symbiotic properties with wearer"
+        ]
+        
+        # Hidden properties revealed at max level
+        self.hidden_abilities = [
+            "Chrono-Shift: Occasionally allows a second turn",
+            "Reality Fold: Chance to negate fatal damage",
+            "Lattice Resonance: Syncs with Final Fantasy magic"
+        ]
+
+    def _get_abilities(self):
+        abilities = ["Base: Adaptive Shielding"]
+        
+        if self.upgrade_level >= 1:
+            abilities.append("Phase Shift: Chance to dodge physical attacks")
+        if self.upgrade_level >= 2:
+            abilities.append("Mana Weave: Converts MP to temporary HP")
+        if self.upgrade_level >= 3:
+            abilities.append("Quantum Parry: Counterattack after successful dodge")
+        if self.upgrade_level >= 5:  # Max level
+            abilities.append("FINALE: Lattice Overdrive - Ultimate ability unlock")
+            
+        return abilities
+
+    def upgrade(self):
+        if self.upgrade_level < 5:
+            self.upgrade_level += 1
+            # Recalculate stats with new level
+            self.stat_modifiers = {
+                'defense': 15 + (self.upgrade_level * 5),
+                'magic_defense': 20 + (self.upgrade_level * 6),
+                'agility': 10 + (self.upgrade_level * 3),
+                'evasion': 25 + (self.upgrade_level * 8)
+            }
+            self.abilities = self._get_abilities()
+            return f"{self.name} upgraded to level {self.upgrade_level}!"
+        else:
+            return f"{self.name} is already at maximum upgrade level!"
+
+    def inspect(self):
+        print(f"=== {self.name} [{self.rarity}] ===")
+        print(f"Upgrade Level: {self.upgrade_level}/5")
+        print(f"{self.description}\n")
+        
+        print("STATS:")
+        for stat, value in self.stat_modifiers.items():
+            print(f"  {stat.upper()}: +{value}")
+        
+        print("\nABILITIES:")
+        for ability in self.abilities:
+            print(f"  • {ability}")
+        
+        if self.upgrade_level == 5:
+            print("\n*** HIDDEN PROPERTIES UNLOCKED ***")
+            for hidden in self.hidden_abilities:
+                print(f"  ☆ {hidden}")
+
+    def reveal_lore(self, fragment_number):
+        if 0 <= fragment_number < len(self.lore_fragments):
+            return self.lore_fragments[fragment_number]
+        return "Lore fragment not found."
+
+    def ultimate_ability(self):
+        if self.upgrade_level < 5:
+            return "Ultimate ability not yet unlocked. Reach upgrade level 5."
+        
+        ultimate_effects = [
+            "Reality temporarily unravels around you",
+            "All enemies take 9999 damage (non-elemental)",
+            "Party members are fully healed and revived",
+            "Lattice stabilization - all negative effects cleared",
+            "Temporary invincibility for 3 turns"
+        ]
+        
+        return f"LATTICE OVERDRIVE ACTIVATED:\n" + "\n".join([f"• {effect}" for effect in ultimate_effects])
+
+# Companion character who wears the bodysuit
+class Jen:
+    def __init__(self):
+        self.name = "Jen"
+        self.level = 1
+        self.role = "Dimension Hunter"
+        self.bodysuit = JansBodysuit()
+        self.story_moments = [
+            "Jen found the bodysuit in the Ruined Chronos Lab",
+            "The suit seems to whisper secrets of forgotten timelines",
+            "Sometimes Jen's eyes flash with knowledge beyond her years"
+        ]
+
+    def equip_bodysuit(self):
+        # Apply bodysuit stats to Jen's base stats
+        base_stats = {'defense': 8, 'magic_defense': 12, 'agility': 15, 'evasion': 10}
+        enhanced_stats = {}
+        
+        for stat, value in base_stats.items():
+            enhanced_stats[stat] = value + self.bodysuit.stat_modifiers.get(stat, 0)
+        
+        return enhanced_stats
+
+    def special_dialogue(self):
+        dialogues = [
+            "This suit... it's showing me possibilities.",
+            "I can feel the Lattice vibrating through the fabric.",
+            "The bodysuit remembers things I've never experienced.",
+            "We're closer to the truth than ever before."
+        ]
+        return random.choice(dialogues)
+
+# Example usage
+if __name__ == "__main__":
+    print("=== JEN'S BODYSUIT - ENDGAME GEAR ===\n")
+    
+    # Create and inspect the bodysuit
+    bodysuit = JansBodysuit()
+    bodysuit.inspect()
+    
+    # Upgrade it to max level
+    print("\n--- UPGRADING ---")
+    for i in range(5):
+        print(bodysuit.upgrade())
+    
+    print("\n--- MAX LEVEL BODYSUIT ---")
+    bodysuit.inspect()
+    
+    print("\n--- ULTIMATE ABILITY ---")
+    print(bodysuit.ultimate_ability())
+    
+    print("\n--- LORE FRAGMENT ---")
+    print(bodysuit.reveal_lore(2))
+    
+    # Create Jen character
+    jen = Jen()
+    print(f"\n--- {jen.name.upper()} ---")
+    print(f"Role: {jen.role}")
+    enhanced_stats = jen.equip_bodysuit()
+    print("Enhanced Stats:", enhanced_stats)
+    print("Special Dialogue:", jen.special_dialogue())
